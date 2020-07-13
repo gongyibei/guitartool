@@ -1,13 +1,12 @@
 # Install dependencies
 
 ```bash
-pip -r r
+pip install -r requirements.txt
 ```
+
 # Run
 
 ```bash
 python main.py
 
 ```
-
-# Short cut
