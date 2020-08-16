@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import heapq
-import pprint
 from itertools import combinations
 
 DIATONIC_SCALE = ('C', 'bD', 'D', 'bE', 'E', 'F', 'bG', 'G', 'bA', 'A', 'bB',
@@ -22,44 +21,7 @@ def get_last_note(note):
     return ALL_NOTES[i]
 
 class Scale():
-    allpitchindex = {
-        '1': 1,
-        '#1': 2,
-        'b2': 2,
-        '2': 3,
-        '#2': 4,
-        'b3': 4,
-        '3': 5,
-        '4': 6,
-        '#4': 7,
-        'b5': 7,
-        '5': 8,
-        '#5': 9,
-        'b6': 9,
-        '6': 10,
-        '#6': 11,
-        'b7': 11,
-        '7': 12
-    }
-    allnoteindex = {
-        'C': 1,
-        '#C': 2,
-        'bD': 2,
-        'D': 3,
-        '#D': 4,
-        'bE': 4,
-        'E': 5,
-        'F': 6,
-        '#F': 7,
-        'bG': 7,
-        'G': 8,
-        '#G': 9,
-        'bA': 9,
-        'A': 10,
-        '#A': 11,
-        'bB': 11,
-        'B': 12
-    }
+
     allpitchs = ('1', 'b2', '2', 'b3', '3', '4', 'b5', '5', 'b6', '6',
                      'b7', '7')
     allnotes = ('C', 'bD', 'D', 'bE', 'E', 'F', 'bG', 'G', 'bA','A', 'bB', 'B',)
@@ -70,6 +32,49 @@ class Scale():
         self.interval = interval
         self.en_name = en_name
         self.zh_name = zh_name
+
+    @classmethod
+    def pitch2index(cls, pitch):
+        return {
+            '1': 1,
+            '#1': 2,
+            'b2': 2,
+            '2': 3,
+            '#2': 4,
+            'b3': 4,
+            '3': 5,
+            '4': 6,
+            '#4': 7,
+            'b5': 7,
+            '5': 8,
+            '#5': 9,
+            'b6': 9,
+            '6': 10,
+            '#6': 11,
+            'b7': 11,
+            '7': 12
+        }[pitch]
+    @classmethod
+    def note2index(cls,note):
+        return {
+            'C': 1,
+            '#C': 2,
+            'bD': 2,
+            'D': 3,
+            '#D': 4,
+            'bE': 4,
+            'E': 5,
+            'F': 6,
+            '#F': 7,
+            'bG': 7,
+            'G': 8,
+            '#G': 9,
+            'bA': 9,
+            'A': 10,
+            '#A': 11,
+            'bB': 11,
+            'B': 12
+        }[note]
 
     
     @classmethod
@@ -87,21 +92,17 @@ class Scale():
         interval = []
         lastind = 0
         for pitch in pitchs[1:]:
-            curind = cls.allpitchindex[pitch]
+            curind = cls.pitch2index(pitch)
             interval.append(curind - lastind)
             lastind = curind
         interval = tuple(interval)
         return cls(pitchs, interval, en_name=en_name, zh_name=zh_name)
 
-    @property
-    def pitchindex(self):
-        return tuple(Scale.allpitchindex[pitch] for pitch in self.pitchs) 
-
     def notes(self, key):
         sta = self.allnoteindex[key]-1
         allnotes = Scale.allnotes[sta:]+Scale.allnotes[:sta]
-        pitchindex = self.pitchindex
-        return tuple(allnotes[i-1] for i in self.pitchindex)
+        pitchindex = tuple(self.pitch2index[pitch] for pitch in self.pitchs)
+        return tuple(allnotes[i-1] for i in pitchindex)
 
 
 
@@ -321,49 +322,6 @@ def special():
     out = [sorted(s, key=lambda i: DIATONIC_SCALE.index(i)) for s in out]
     return out
 
-
-def tuning_analysis(chroma_file):
-    out = [0] * 12
-
-    with open(chroma_file, 'r') as f:
-        lines = f.readlines()
-        for i in range(12):
-            s = sum([float(line.strip().split(';')[i]) for line in lines])
-            out[i] = [ALL[i], s]
-
-    #pprint.pprint(heapq.nlargest(12,out,key = lambda a:a[1]))
-    out = dict(out)
-
-    prob1 = []
-    prob2 = []
-    for i, a in enumerate(ALL):
-        s = [out[a]]
-        cur = i
-        string = a
-        #print(a)
-        for iv in INTVAL:
-            cur += iv
-            cur %= 12
-            string += ALL[cur]
-            s.append(out[ALL[cur]])
-        prob1.append([a, sum(s)])
-
-    pprint.pprint(prob1)
-    nlarg = heapq.nlargest(4, prob1, key=lambda a: a[1])
-    #pprint.pprint(nlarg)
-    nlarg = heapq.nlargest(1, prob1, key=lambda a: a[1])
-    pprint.pprint('经分析此曲子是{}调'.format(nlarg[0][0]))
-
-    #print(string)
-    #print('是{}调的概率为:{}'.format(a,s))
-
-
 if __name__ == '__main__':
-    # tuning_analysis('test_chroma.csv')
-    #out = special()
-    #pprint.pprint(out)
-    h = CommonScale.Hirajoshi
-    print(h.pitchs)
-    print(h.pitchindex)
-    print(h.notes('bA'))
+    print(CommonScale.Ionian.pitchs)
 

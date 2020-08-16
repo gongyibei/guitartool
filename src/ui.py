@@ -1,60 +1,12 @@
 import curses
 import random
-#  from colorama import Back, Fore, Style, init
 
 from chord import CHORD_TYPES, Chord
-#  from termcolor import colored
-from color import colored
+from color import Fore, Back
 from scale import ALL_NOTES
 import numpy as np
-from audio_generator import generate_song, generate_chord, play
+from player import generate_song, generate_chord, play
 
-
-class Fore:
-    BLACK = 30
-    RED = 31
-    GREEN = 32
-    YELLOW = 33
-    BLUE = 34
-    MAGENTA = 35
-    CYAN = 36
-    WHITE = 37
-
-
-class Back:
-    BLACK = 40
-    RED = 41
-    GREEN = 42
-    YELLOW = 43
-    BLUE = 44
-    MAGENTA = 45
-    CYAN = 46
-    WHITE = 47
-
-
-def init_color():
-    curses.start_color()
-    curses.use_default_colors()
-    # Fore
-    curses.init_pair(Fore.BLACK, curses.COLOR_BLACK, -1)
-    curses.init_pair(Fore.RED, curses.COLOR_RED, -1)
-    curses.init_pair(Fore.GREEN, curses.COLOR_GREEN, -1)
-    curses.init_pair(Fore.YELLOW, curses.COLOR_YELLOW, -1)
-    curses.init_pair(Fore.BLUE, curses.COLOR_BLUE, -1)
-    curses.init_pair(Fore.MAGENTA, curses.COLOR_MAGENTA, -1)
-    curses.init_pair(Fore.CYAN, curses.COLOR_CYAN, -1)
-    curses.init_pair(Fore.WHITE, curses.COLOR_WHITE, -1)
-
-    # Back
-    curses.init_pair(Back.BLACK, -1, curses.COLOR_BLACK)
-    curses.init_pair(Back.RED, -1, curses.COLOR_RED)
-    curses.init_pair(Back.GREEN, -1, curses.COLOR_GREEN)
-    curses.init_pair(Back.YELLOW, -1, curses.COLOR_YELLOW)
-    curses.init_pair(Back.BLUE, -1, curses.COLOR_BLUE)
-    curses.init_pair(Back.MAGENTA, -1, curses.COLOR_MAGENTA)
-    curses.init_pair(Back.CYAN, -1, curses.COLOR_CYAN)
-    curses.init_pair(Back.WHITE, -1, curses.COLOR_WHITE)
-    curses.curs_set(0)
 
 
 class Win:
@@ -69,7 +21,6 @@ class Win:
         pass
 
     def draw(self):
-        #  self.win.clear()
         self.build()
         self.win.refresh()
 
@@ -309,7 +260,7 @@ class ChordCard(Win):
                 chord.append(semi)
             song[-1][-1] = 2
 
-            audio = generate_song(song, 0.35)
+            audio = generate_song(song, 0.1)
             #  chord = generate_chord(chord, 2)
             play(audio)
             #  play(chord)
@@ -331,7 +282,7 @@ class Matrix(Cantainer):
         for r in range(self.nrow):
             for c in range(self.ncol):
                 winlist.append(Card(y + r * Card.hei, x + c * Card.wid))
-        super().__init__(hei, wid, x, x, winlist=winlist)
+        super().__init__(hei, wid, y, x, winlist=winlist)
         self.items = items
         self.nitems = len(self.items)
         self.first = 0
@@ -438,13 +389,18 @@ class Box(Cantainer):
 
 class Ui(Cantainer):
     def __init__(self):
-        hei, wid = curses.initscr().getmaxyx()
-        init_color()
+        curses.initscr()
+        curses.noecho()
+        super().__init__(curses.LINES, curses.COLS, 0, 0)
+        self.ration = (1, 4)
 
-        self.ration = (1, 3)
-        hei1, wid1, y1, x1 = hei - 3, wid // sum(
-            self.ration) * self.ration[0], 0, 0
+        self.init_color()
+        self.footer = self.init_footer()
+        self.left = self.init_left()
+        self.right = self.init_right()
+        self.curbox = self.left
 
+    def init_footer(self):
         help = [
             ['K','上'],
             ['J','下'],
@@ -455,51 +411,57 @@ class Ui(Cantainer):
             ['R','刷新'],
             ['Q','退出'],
         ]
-        self.footer = Matrix(2, wid, hei - 3, 0, HelpCard, items=help)
+        footer = Matrix(2, self.wid, self.hei - 3, 0, HelpCard, items=help)
+        self.winlist.append(footer)
+        return footer
 
+    def init_left(self):
+        hei, wid, y, x = self.hei - 3, self.wid // sum(
+            self.ration) * self.ration[0], 0, 0
         menus = [
             ['根  音', ALL_NOTES],
             ['类  型', list(CHORD_TYPES.keys())],
         ]
-        matrix = Matrix(hei1 - 2,
-                        wid1 - 2,
-                        y1 + 1,
-                        x1 + 1,
-                        MenuCard,
-                        ncol=1,
-                        items=menus)
-        self.left = Box(hei1,
-                        wid1,
-                        y1,
-                        x1,
-                        matrix,
-                        winlist=[matrix],
-                        choosed=True,
-                        title='设置')
+        matrix = Matrix(hei - 2, wid - 2, y + 1, x + 1, MenuCard, ncol=1, items=menus)
+        left = Box(hei, wid, y, x, matrix, winlist=[matrix], choosed=True, title='设置')
+        self.winlist.append(left)
+        return left
 
-        chords = self.get_chords('A', 'M')
-        hei2, wid2, y2, x2 = hei - 3, wid // sum(
-            self.ration) * self.ration[1], 0, wid // sum(
+    def init_right(self):
+        chords = self.get_chords(ALL_NOTES[0], list(CHORD_TYPES.keys())[0])
+        hei, wid, y, x = self.hei - 3, self.wid // sum(
+            self.ration) * self.ration[1], 0, self.wid // sum(
                 self.ration) * self.ration[0]
+        matrix = Matrix(hei - 2, wid - 2, y + 1, x + 1, ChordCard, items=chords)
+        right = Box(hei, wid, y, x, matrix, winlist=[matrix], title='和弦')
+        self.winlist.append(right)
+        return right
 
-        matrix = Matrix(hei2 - 2,
-                        wid2 - 2,
-                        y2 + 1,
-                        x2 + 1,
-                        ChordCard,
-                        items=chords)
-        self.right = Box(hei2,
-                         wid2,
-                         y2,
-                         x2,
-                         matrix,
-                         winlist=[matrix],
-                         title='和弦')
 
-        super().__init__(hei, wid, 0, 0, winlist=[self.left, self.right, self.footer])
 
-        self.curbox = self.left
-        self.draw()
+    def init_color(self):
+        curses.start_color()
+        curses.use_default_colors()
+        # Fore
+        curses.init_pair(Fore.BLACK, curses.COLOR_BLACK, -1)
+        curses.init_pair(Fore.RED, curses.COLOR_RED, -1)
+        curses.init_pair(Fore.GREEN, curses.COLOR_GREEN, -1)
+        curses.init_pair(Fore.YELLOW, curses.COLOR_YELLOW, -1)
+        curses.init_pair(Fore.BLUE, curses.COLOR_BLUE, -1)
+        curses.init_pair(Fore.MAGENTA, curses.COLOR_MAGENTA, -1)
+        curses.init_pair(Fore.CYAN, curses.COLOR_CYAN, -1)
+        curses.init_pair(Fore.WHITE, curses.COLOR_WHITE, -1)
+
+        # Back
+        curses.init_pair(Back.BLACK, -1, curses.COLOR_BLACK)
+        curses.init_pair(Back.RED, -1, curses.COLOR_RED)
+        curses.init_pair(Back.GREEN, -1, curses.COLOR_GREEN)
+        curses.init_pair(Back.YELLOW, -1, curses.COLOR_YELLOW)
+        curses.init_pair(Back.BLUE, -1, curses.COLOR_BLUE)
+        curses.init_pair(Back.MAGENTA, -1, curses.COLOR_MAGENTA)
+        curses.init_pair(Back.CYAN, -1, curses.COLOR_CYAN)
+        curses.init_pair(Back.WHITE, -1, curses.COLOR_WHITE)
+        curses.curs_set(0)
 
     def change_box(self):
         if self.curbox == self.left:
@@ -515,12 +477,9 @@ class Ui(Cantainer):
         base = args[0]
         type = args[1]
         filters = {
-            'OpenChords':
-            0,
-            'Barrechord':
-            0,
-            'inversion':
-            1,
+            'OpenChords': 0,
+            'Barrechord': 0,
+            'inversion': 1,
             'strings': [
                 [6, 5, 4, 3, 2, 1],
                 [5, 4, 3, 2, 1],
@@ -528,8 +487,7 @@ class Ui(Cantainer):
                 [6, 4, 3, 2],
                 [5, 4, 3, 2],
             ],
-            'gap':
-            4,
+            'gap': 4,
             'ignor': []
         }
         chords = Chord(base=base, type=type).get_positions(filters=filters)
@@ -538,11 +496,19 @@ class Ui(Cantainer):
         chords = [[f' {base}{type} ', chord] for chord in chords]
         return chords
 
+    def exit(self):
+        curses.echo()
+        curses.nocbreak()
+        curses.endwin()
+
     def loop(self):
         self.draw()
         k = self.win.getch()
-        while (k != ord('q')):
-            if k == ord('\t'):
+        while True:
+            if k == ord('q'):
+                self.exit()
+                break
+            elif k == ord('\t'):
                 self.change_box()
             if k == ord('k'):
                 self.curbox.matrix.up()
@@ -564,6 +530,7 @@ class Ui(Cantainer):
                 items = self.left.matrix.getitems()
                 self.right.matrix.items = self.get_chords(*items)
                 self.right.matrix.refresh()
+
             self.draw()
             k = self.win.getch()
 
