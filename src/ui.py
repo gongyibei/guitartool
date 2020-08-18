@@ -260,7 +260,7 @@ class ChordCard(Win):
                 chord.append(semi)
             song[-1][-1] = 2
 
-            audio = generate_song(song, 0.1)
+            audio = generate_song(song, 0.3)
             #  chord = generate_chord(chord, 2)
             play(audio)
             #  play(chord)

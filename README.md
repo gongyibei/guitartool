@@ -11,4 +11,4 @@ python main.py
 ```
 
 # Ui
-![Ui](https://github.com/gongyibei/guitartool/blob/master/ui.jpg)
+![Ui](http://129.211.66.71/ui.jpg)
