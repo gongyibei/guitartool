@@ -1,0 +1,148 @@
+2022-05-18 14:50:07 - INFO: 设置
+2022-05-18 14:50:07 - INFO: [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:07 - INFO: the menu of chord tab created. winlist:[<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:07 - INFO: 和弦
+2022-05-18 14:50:07 - INFO: [<src.gui.container.Matrix object at 0x7fe0355c5f40>]
+2022-05-18 14:50:07 - INFO: the page of chord tab created. winlist:[<src.gui.container.Matrix object at 0x7fe0355c5f40>]
+2022-05-18 14:50:07 - INFO: 设置
+2022-05-18 14:50:07 - INFO: [<src.gui.container.Matrix object at 0x7fe035603160>]
+2022-05-18 14:50:07 - INFO: the menu of chord tab created. winlist:[<src.gui.container.Matrix object at 0x7fe035603160>]
+2022-05-18 14:50:07 - INFO: 音阶
+2022-05-18 14:50:07 - INFO: [<src.gui.container.Matrix object at 0x7fe035603250>]
+2022-05-18 14:50:07 - INFO: the page of chord tab created. winlist:[<src.gui.container.Matrix object at 0x7fe035603250>]
+2022-05-18 14:50:07 - INFO: Start draw UI, current tab:chord
+2022-05-18 14:50:07 - INFO: start draw menu
+2022-05-18 14:50:07 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:07 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:07 - INFO: the menu is drawn
+2022-05-18 14:50:07 - INFO: start draw page
+2022-05-18 14:50:07 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5f40>]
+2022-05-18 14:50:07 - INFO: 4, [<src.gui.card.ChordCard object at 0x7fe0355c5bb0>, <src.gui.card.ChordCard object at 0x7fe035603070>, <src.gui.card.ChordCard object at 0x7fe035603040>, <src.gui.card.ChordCard object at 0x7fe0356030d0>]
+2022-05-18 14:50:07 - INFO: the page is drawn
+2022-05-18 14:50:07 - INFO: 6, [<src.gui.card.HelpCard object at 0x7fe032cc2910>, <src.gui.card.HelpCard object at 0x7fe032e14d00>, <src.gui.card.HelpCard object at 0x7fe032e14be0>, <src.gui.card.HelpCard object at 0x7fe032e14c70>, <src.gui.card.HelpCard object at 0x7fe0355c5070>, <src.gui.card.HelpCard object at 0x7fe0355c50d0>]
+2022-05-18 14:50:09 - INFO: handle
+2022-05-18 14:50:09 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:09 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:09 - INFO: handle
+2022-05-18 14:50:09 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:09 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:10 - INFO: handle
+2022-05-18 14:50:10 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:10 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:10 - INFO: handle
+2022-05-18 14:50:10 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:10 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:11 - INFO: handle
+2022-05-18 14:50:11 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:11 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:11 - INFO: handle
+2022-05-18 14:50:11 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:11 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:12 - INFO: handle
+2022-05-18 14:50:12 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:12 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:13 - INFO: handle
+2022-05-18 14:50:13 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:13 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:13 - INFO: handle
+2022-05-18 14:50:13 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:13 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:13 - INFO: handle
+2022-05-18 14:50:13 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:13 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:13 - INFO: handle
+2022-05-18 14:50:13 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:13 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:14 - INFO: handle
+2022-05-18 14:50:14 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:14 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:14 - INFO: handle
+2022-05-18 14:50:14 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:14 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:15 - INFO: handle
+2022-05-18 14:50:15 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:15 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:16 - INFO: handle
+2022-05-18 14:50:16 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:16 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:16 - INFO: handle
+2022-05-18 14:50:16 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:16 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:17 - INFO: handle
+2022-05-18 14:50:17 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:17 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:17 - INFO: handle
+2022-05-18 14:50:17 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:17 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:18 - INFO: handle
+2022-05-18 14:50:18 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:18 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:18 - INFO: handle
+2022-05-18 14:50:18 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:18 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:19 - INFO: handle
+2022-05-18 14:50:19 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:19 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:19 - INFO: handle
+2022-05-18 14:50:19 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:19 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:20 - INFO: handle
+2022-05-18 14:50:20 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:20 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:22 - INFO: handle
+2022-05-18 14:50:22 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:22 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:23 - INFO: handle
+2022-05-18 14:50:23 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:23 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:23 - INFO: handle
+2022-05-18 14:50:23 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:23 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:23 - INFO: handle
+2022-05-18 14:50:23 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:23 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:23 - INFO: handle
+2022-05-18 14:50:23 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:23 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:24 - INFO: handle
+2022-05-18 14:50:24 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:24 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:25 - INFO: handle
+2022-05-18 14:50:25 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:25 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:25 - INFO: handle
+2022-05-18 14:50:25 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:25 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:25 - INFO: handle
+2022-05-18 14:50:25 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:25 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:26 - INFO: refresh
+2022-05-18 14:50:26 - INFO: Start draw UI, current tab:chord
+2022-05-18 14:50:26 - INFO: start draw menu
+2022-05-18 14:50:26 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:26 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:26 - INFO: the menu is drawn
+2022-05-18 14:50:26 - INFO: start draw page
+2022-05-18 14:50:26 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5f40>]
+2022-05-18 14:50:26 - INFO: 4, [<src.gui.card.ChordCard object at 0x7fe0355c5bb0>, <src.gui.card.ChordCard object at 0x7fe035603070>, <src.gui.card.ChordCard object at 0x7fe035603040>, <src.gui.card.ChordCard object at 0x7fe0356030d0>]
+2022-05-18 14:50:26 - INFO: the page is drawn
+2022-05-18 14:50:26 - INFO: 6, [<src.gui.card.HelpCard object at 0x7fe032cc2910>, <src.gui.card.HelpCard object at 0x7fe032e14d00>, <src.gui.card.HelpCard object at 0x7fe032e14be0>, <src.gui.card.HelpCard object at 0x7fe032e14c70>, <src.gui.card.HelpCard object at 0x7fe0355c5070>, <src.gui.card.HelpCard object at 0x7fe0355c50d0>]
+2022-05-18 14:50:30 - INFO: handle
+2022-05-18 14:50:30 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:30 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:31 - INFO: handle
+2022-05-18 14:50:31 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:31 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:31 - INFO: handle
+2022-05-18 14:50:31 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:31 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:32 - INFO: handle
+2022-05-18 14:50:32 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:32 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:32 - INFO: handle
+2022-05-18 14:50:32 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:32 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:50:35 - INFO: handle
+2022-05-18 14:50:35 - INFO: 1, [<src.gui.container.Matrix object at 0x7fe0355c5b50>]
+2022-05-18 14:50:35 - INFO: 7, [<src.gui.card.MenuCard object at 0x7fe0355c5be0>, <src.gui.card.MenuCard object at 0x7fe0355c5a90>, <src.gui.card.MenuCard object at 0x7fe0355c5c40>, <src.gui.card.MenuCard object at 0x7fe0355c5ca0>, <src.gui.card.MenuCard object at 0x7fe0355c5cd0>, <src.gui.card.MenuCard object at 0x7fe0355c5370>, <src.gui.card.MenuCard object at 0x7fe0355c53a0>]
+2022-05-18 14:51:58 - INFO: quit
